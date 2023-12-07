@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064E1F7F2B21BA9900F60426 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E1F7E2B21BA9900F60426 /* DataService.swift */; };
 		06E39C102B20645A000702B4 /* CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E39C0F2B20645A000702B4 /* CitySightsApp.swift */; };
 		06E39C122B20645A000702B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E39C112B20645A000702B4 /* ContentView.swift */; };
 		06E39C142B20645B000702B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E39C132B20645B000702B4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		064E1F7E2B21BA9900F60426 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		06E39C0C2B20645A000702B4 /* CitySights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitySights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E39C0F2B20645A000702B4 /* CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightsApp.swift; sourceTree = "<group>"; };
 		06E39C112B20645A000702B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				06E39C462B21B923000702B4 /* Info.plist */,
 				06E39C0F2B20645A000702B4 /* CitySightsApp.swift */,
 				06E39C112B20645A000702B4 /* ContentView.swift */,
+				064E1F7E2B21BA9900F60426 /* DataService.swift */,
 				06E39C132B20645B000702B4 /* Assets.xcassets */,
 				06E39C152B20645B000702B4 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064E1F7F2B21BA9900F60426 /* DataService.swift in Sources */,
 				06E39C122B20645A000702B4 /* ContentView.swift in Sources */,
 				06E39C102B20645A000702B4 /* CitySightsApp.swift in Sources */,
 			);

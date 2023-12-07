@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var query: String = ""
+    let dataService = DataService()
     
     var body: some View {
         HStack {
@@ -18,9 +19,15 @@ struct ContentView: View {
                 // TODO: Implement query
             } label: {
                 Text("Go")
+                    .padding(.horizontal)
+                    .padding(.vertical, 10)
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
             }
-            .onAppear {
-                print(Bundle.main.infoDictionary?["API_KEY"] as? String)
+            .padding()
+            .task {
+                await dataService.businessSearch()
             }
         }
     }
