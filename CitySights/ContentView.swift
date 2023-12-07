@@ -19,6 +19,9 @@ struct ContentView: View {
             } label: {
                 Text("Go")
             }
+            .onAppear {
+                print(Bundle.main.infoDictionary?["API_KEY"] as? String)
+            }
         }
     }
 }
