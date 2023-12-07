@@ -27,15 +27,35 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
-                .padding()
-                .task {
-                    businesses = await dataService.businessSearch()
+                
+            }
+            List{
+                ForEach(businesses) { b in
+                    VStack(spacing: 20) {
+                        HStack(spacing: 0) {
+                            Image("list-placeholder-image")
+                                .padding(.trailing, 16)
+                            VStack(alignment: .leading) {
+                                Text(b.name ?? "Restaurant")
+                                    .font(Font.system(size: 15))
+                                    .bold()
+                                
+                                Text(TextHelper.distanceAwayText(meter: b.distance ?? 0))
+                                    .font(Font.system(size: 15))
+                                    .foregroundStyle(Color(red: 67/255, green: 71/255, blue: 76/255))
+                            }
+                            Spacer()
+                            Image("regular_\(b.rating ?? 0)")
+                        }
+                        Divider()
+                    }
                 }
+                .listRowSeparator(.hidden)
             }
-            List(businesses) { business in
-                Text(business.name ?? "N")
-                    .bold()
-            }
+            .listStyle(.plain)
+        }
+        .task {
+            businesses = await dataService.businessSearch()
         }
     }
 }
