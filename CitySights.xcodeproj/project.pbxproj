@@ -16,6 +16,8 @@
 		064E1F8D2B2406AB00F60426 /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E1F8C2B2406AB00F60426 /* BusinessModel.swift */; };
 		064E1F8F2B240A7D00F60426 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E1F8E2B240A7D00F60426 /* MapView.swift */; };
 		064E1F912B240B0400F60426 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E1F902B240B0400F60426 /* ListView.swift */; };
+		064E1F932B2460F300F60426 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E1F922B2460F300F60426 /* OnboardingView.swift */; };
+		064E1F952B24666000F60426 /* OnboardingViewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E1F942B24666000F60426 /* OnboardingViewDetails.swift */; };
 		06E39C102B20645A000702B4 /* CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E39C0F2B20645A000702B4 /* CitySightsApp.swift */; };
 		06E39C122B20645A000702B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E39C112B20645A000702B4 /* HomeView.swift */; };
 		06E39C142B20645B000702B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E39C132B20645B000702B4 /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		064E1F8C2B2406AB00F60426 /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
 		064E1F8E2B240A7D00F60426 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		064E1F902B240B0400F60426 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		064E1F922B2460F300F60426 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		064E1F942B24666000F60426 /* OnboardingViewDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewDetails.swift; sourceTree = "<group>"; };
 		06E39C0C2B20645A000702B4 /* CitySights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitySights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E39C0F2B20645A000702B4 /* CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightsApp.swift; sourceTree = "<group>"; };
 		06E39C112B20645A000702B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		064E1F962B24666500F60426 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				064E1F942B24666000F60426 /* OnboardingViewDetails.swift */,
+				064E1F922B2460F300F60426 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		06E39C032B20645A000702B4 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,7 @@
 		06E39C0E2B20645A000702B4 /* CitySights */ = {
 			isa = PBXGroup;
 			children = (
+				064E1F962B24666500F60426 /* Onboarding */,
 				06E39C462B21B923000702B4 /* Info.plist */,
 				06E39C0F2B20645A000702B4 /* CitySightsApp.swift */,
 				064E1F8A2B2318D400F60426 /* BusinessDetailView.swift */,
@@ -188,11 +202,13 @@
 				064E1F822B21C01B00F60426 /* BusinessSearch.swift in Sources */,
 				06E39C122B20645A000702B4 /* HomeView.swift in Sources */,
 				064E1F862B21C0C200F60426 /* Region.swift in Sources */,
+				064E1F952B24666000F60426 /* OnboardingViewDetails.swift in Sources */,
 				064E1F842B21C06200F60426 /* Business.swift in Sources */,
 				064E1F8D2B2406AB00F60426 /* BusinessModel.swift in Sources */,
 				064E1F8B2B2318D400F60426 /* BusinessDetailView.swift in Sources */,
 				064E1F8F2B240A7D00F60426 /* MapView.swift in Sources */,
 				064E1F912B240B0400F60426 /* ListView.swift in Sources */,
+				064E1F932B2460F300F60426 /* OnboardingView.swift in Sources */,
 				06E39C102B20645A000702B4 /* CitySightsApp.swift in Sources */,
 				064E1F892B2218CF00F60426 /* TextHelper.swift in Sources */,
 			);
