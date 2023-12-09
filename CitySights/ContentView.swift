@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(BusinessModel.self) var model
+    @State var selectedTab = 0
     
     var body: some View {
         @Bindable var model = model
@@ -29,7 +30,18 @@ struct ContentView: View {
                 }
                 
             }
-           ListView()
+            Picker("", selection: $selectedTab) {
+                Text("List")
+                    .tag(0)
+                Text("Map")
+                    .tag(1)
+            }.pickerStyle(SegmentedPickerStyle())
+            
+            if selectedTab == 1 {
+                MapView()
+            } else {
+                ListView()
+            }
         }
         .onAppear {
             model.getBusinesses()
