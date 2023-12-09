@@ -20,7 +20,7 @@ struct MapView: View {
             }
         }
         .onChange(of: selectedBusinessId) { oldValue, newValue in
-            let business = model.businesses.first { business in
+            let business = model.businesses.first  { business in
                 business.id == selectedBusinessId
             }
             

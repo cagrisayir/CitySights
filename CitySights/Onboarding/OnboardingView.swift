@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    @Environment(BusinessModel.self) var model
     @Environment(\.dismiss) var dismiss
     @State var currentView: Int = 0
     
@@ -23,6 +24,9 @@ struct OnboardingView: View {
             
             OnboardingViewDetails(
                 bgColor: Color(.green), headline: "Discover your city", subHeadline: "We will show you the best restaurants, venues, and more, based on your location", buttonText: "Done") {
+                    
+                    // Ask user for permission to locate
+                    model.getUserLocation()
                     dismiss()
                 }
                 .tag(1)
