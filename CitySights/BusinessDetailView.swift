@@ -9,9 +9,11 @@ import SwiftUI
 
 struct BusinessDetailView: View {
     
-    var business: Business?
+    @Environment(BusinessModel.self) var model
     
     var body: some View {
+        let business = model.selectedBusiness
+        
         VStack(spacing: 0) {
             ZStack(alignment: .trailing) {
                 Image("detail-placeholder-image")
@@ -93,6 +95,3 @@ struct BusinessDetailView: View {
     }
 }
 
-#Preview {
-    BusinessDetailView(business: Business(id: "asd", is_closed: true, rating: 5.0, name: "Cagri bufe", phone: "+90 545 268 6099", review_count: 399, url: "www.cagrisayir.dev"))
-}
